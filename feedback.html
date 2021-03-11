@@ -21,7 +21,7 @@
 <body>
     <form id="form" class="textgtreg">
 
-        <cf-robot-message cf-questions="Hi there! &#x1F44B;&amp;&amp;Thanks for stopping by!&amp;&amp;You are a valued member of SESS and we would love to improve... please leave your honest feedback below and suggestions on how we could resolve your observation(s) &#x1F60A;&amp;&amp;If you wish to change an answer, just click on it"></cf-robot-message>
+        <cf-robot-message cf-questions="Hi there! &#x1F44B;&amp;&amp;Thanks for stopping by!&amp;&amp;You are a valued member of SESS and we would love to improve... please leave your honest feedback below and suggestions on how we could resolve your observation(s) &#x1F60A;"></cf-robot-message>
         
         <fieldset cf-questions="Is your feedback sensitive and only should be seen by the team maintaining this form?" cf-error="Please choose an option.">
             <input required type="radio" name="fbsensitive" id="fbsensitiveyes" value="yes">
@@ -43,6 +43,26 @@
 
             <input required type="radio" name="fbnature" id="fbnature4" value="other">
             <label for="fbnature4">Other</label>
+        </fieldset>
+        
+        <fieldset cf-questions="Does your feedback relate to a specific team?" cf-error="Please choose an option.">
+            <input required type="radio" name="fbteam" id="fbteam1" value="board">
+            <label for="fbteam1">Board</label>
+
+            <input required type="radio" name="fbteam" id="fbteam2" value="committee">
+            <label for="fbteam2">Whole Committee</label>
+
+            <input required type="radio" name="fbteam" id="fbteam3" value="events">
+            <label for="fbteam3">Events</label>
+
+            <input required type="radio" name="fbteam" id="fbteam4" value="commscreative">
+            <label for="fbteam4">Comms/Creative</label>
+            
+            <input required type="radio" name="fbteam" id="fbteam5" value="ambassadors">
+            <label for="fbteam5">Ambassadors</label>
+            
+            <input required type="radio" name="fbteam" id="fbteam6" value="other">
+            <label for="fbteam6">Other</label>
         </fieldset>
 
         <input  type="text" name="complaintdetail" id="complaintdetail" cf-questions="Oh no! What happened?" cf-conditional-fbnature="complaint" />
