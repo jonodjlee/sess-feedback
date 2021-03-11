@@ -21,7 +21,7 @@
 <body>
     <form id="form" class="textgtreg">
 
-        <cf-robot-message cf-questions="Hi! &#x1F44B;&amp;&amp;Thanks for stopping by!&amp;&amp;You are a valued member of SESS and we would love to improve... please leave your honest feedback below and suggestions on how we could resolve your observation(s) &#x1F60A;&amp;&amp;If you wish to change an answer, just click on it"></cf-robot-message>
+        <cf-robot-message cf-questions="Hi there! &#x1F44B;&amp;&amp;Thanks for stopping by!&amp;&amp;You are a valued member of SESS and we would love to improve... please leave your honest feedback below and suggestions on how we could resolve your observation(s) &#x1F60A;&amp;&amp;If you wish to change an answer, just click on it"></cf-robot-message>
         
         <fieldset cf-questions="Is your feedback sensitive and only should be seen by the team maintaining this form?" cf-error="Please choose an option.">
             <input required type="radio" name="fbsensitive" id="fbsensitiveyes" value="yes">
@@ -45,88 +45,17 @@
             <label for="fbnature4">Other</label>
         </fieldset>
 
-        <input required type="text" name="complaintdetail" id="complaintdetail" cf-questions="Oh no! What happened?" cf-conditional-fbnature="complaint" />
+        <input  type="text" name="complaintdetail" id="complaintdetail" cf-questions="Oh no! What happened?" cf-conditional-fbnature="complaint" />
         
-        <input required type="text" name="complimentdetail" id="complimentdetail" cf-questions="Oooh! Tell us about it!" cf-conditional-fbnature="compliment" />
+        <input  type="text" name="complimentdetail" id="complimentdetail" cf-questions="Oooh! Tell us about it!" cf-conditional-fbnature="compliment||idea" />
+                
+        <input  type="text" name="otherdetail" id="otherdetail" cf-questions="Ok... What happened?" cf-conditional-fbnature="other" />
         
-        <input required type="text" name="ideadetail" id="ideadetail" cf-questions="Mmmm! Tell us more!" cf-conditional-fbnature="idea" />
+        <input  type="text" name="complaintsugg" id="complaintsugg" cf-questions="Do you have an idea of how we could improve?" cf-conditional-complaintdetail="[\w\W]*" cf-conditional-otherdetail="[\w\W]*" cf-conditional-fbnature="complaint||other" />
         
-        <input required type="text" name="otherdetail" id="otherdetail" cf-questions="Ok... What happened?" cf-conditional-fbnature="other" />
+        <input  type="text" name="complimentsugg" id="complimentsugg" cf-questions="Sweet! What could we do to make it better?" cf-conditional-complimentdetail="[\w\W]*" cf-conditional-fbnature="compliment||idea" />
 
-        <fieldset cf-questions="That sounds alright...&amp;&amp;I pretty much just stayed in bed all day... how are you feeling?">
-            <input required type="radio" name="howfeel" id="howfeel0" value="😊" cf-conditional-badwhatdidyoudo="[\w\W]*" cf-conditional-goodwhatdidyoudo="[\w\W]*">
-            <label for="howfeel0">&#x1F60A;</label>
-
-            <input required type="radio" name="howfeel" id="howfeel1" value="🤷" cf-conditional-badwhatdidyoudo="[\w\W]*" cf-conditional-goodwhatdidyoudo="[\w\W]*">
-            <label for="howfeel1">&#x1F937;</label>
-
-            <input required type="radio" name="howfeel" id="howfeel2" value="🙃" cf-conditional-badwhatdidyoudo="[\w\W]*" cf-conditional-goodwhatdidyoudo="[\w\W]*">
-            <label for="howfeel2">&#x1F643;</label>
-
-            <input required type="radio" name="howfeel" id="howfeel3" value="😞" cf-conditional-badwhatdidyoudo="[\w\W]*" cf-conditional-goodwhatdidyoudo="[\w\W]*">
-            <label for="howfeel3">&#x1F61E;</label>
-
-            <input required type="radio" name="howfeel" id="howfeel4" value="😴" cf-conditional-badwhatdidyoudo="[\w\W]*" cf-conditional-goodwhatdidyoudo="[\w\W]*">
-            <label for="howfeel4">&#x1F634;</label>
-
-            <input required type="radio" name="howfeel" id="howfeel5" value="😢" cf-conditional-badwhatdidyoudo="[\w\W]*" cf-conditional-goodwhatdidyoudo="[\w\W]*">
-            <label for="howfeel5">&#x1F622;</label>
-
-            <input required type="radio" name="howfeel" id="howfeel6" value="😡" cf-conditional-badwhatdidyoudo="[\w\W]*" cf-conditional-goodwhatdidyoudo="[\w\W]*">
-            <label for="howfeel6">&#x1F621;</label>
-        </fieldset>
-
-        <input type="text" name="howfeelgood" id="howfeelgood" cf-questions="Could you tell me why you feel this way?" cf-conditional-howfeel="😊">
-
-        <input type="text" name="howfeelsoso" id="howfeelsoso" cf-questions="I feel you! its okay, we have our off days and we gotta recharge someday.&amp;&amp;Could you tell me why you feel this way?" cf-conditional-howfeel="🤷||🙃||😞">
-
-        <input type="text" name="howfeelbad" id="howfeelbad" cf-questions="that must be tough &#x1F61F;&amp;&amp;Could you tell me why you feel this way?" cf-conditional-howfeel="😴||😢||😡">
-
-
-        <input type="text" name="oftenfeelthis" id="oftenfeelthis" cf-questions="Do you often feel this way?">
-
-        <fieldset cf-questions="Hmm, I see...&amp;&amp;Why do you think that is?">
-            <input required type="radio" name="whyfeel" id="whyfeeljustme" value="justme">
-            <label for="whyfeeljustme">Just the way I am</label>
-
-            <input required type="radio" name="whyfeel" id="whyfeelstress" value="stress">
-            <label for="whyfeelstress">Stress</label>
-
-            <input required type="radio" name="whyfeel" id="whyfeelrel" value="relationships">
-            <label for="whyfeelrel">Relationships</label>
-        </fieldset>
-
-        <cf-robot-message cf-questions="Sometimes we think moods define who we are, like sometimes i feel fear and then I think I'm just a scaredy cat- but i'm not. I'm not a cat, definitely not a scared one." cf-conditional-whyfeel="justme"></cf-robot-message>
-
-        <cf-robot-message cf-questions="Our moods are often caused by an event or the environment we're in. I'm tiny and the world is big so from time to time, things scare me A LOT. this can cause me to be anxious." cf-conditional-whyfeel="stress||relationships"></cf-robot-message>
-
-        <cf-robot-message cf-questions="it may also be something internal within us. Our sleep, diet and physical activity can cause our moods to change from time to time.&amp;&amp;I sometimes define myself by my moods and I felt very helpless..."></cf-robot-message>
-
-        <cf-robot-message cf-questions="One thing that helps me is self awareness.&amp;&amp;Did you know there's a difference between moods and emotions? Maybe this could help you...&amp;&amp;<img src='assets/img/moodsemotions.png'>" style='padding: 0 !important; margin: 0 !important; width: 80vw !important; height: auto;'></cf-robot-message>
-
-        <fieldset cf-questions="Could you identify the mood or emotions you're feeling?">
-            <input required type="radio" name="moodident" id="moodidentyes" value="yes">
-            <label for="moodidentyes">Yes</label>
-
-            <input required type="radio" name="moodident" id="moodidentno" value="no">
-            <label for="moodidentno">No</label>
-        </fieldset>
-
-        <cf-robot-message cf-questions="Understanding moods and emotions take time and practice but it helps us become self aware.&amp;&amp;Having self awareness helps us look at our options on how to manage how we feel."></cf-robot-message>
-
-        <cf-robot-message cf-questions="I hope that helped you out a little.&amp;&amp;If you'd like to stay connected, I can help and we can become more self-aware and confident together!"></cf-robot-message>
-
-        <fieldset cf-questions="Would you like to stay connected through email?">
-            <input required type="radio" name="connect" id="connectyes" value="yes">
-            <label for="connectyes">Sure!</label>
-
-            <input required type="radio" name="connect" id="connectno" value="no">
-            <label for="connectno">Maybe another time</label>
-        </fieldset>
-
-        <input required type="email" name="email" id="email" cf-input-placeholder="Please enter your email here..." cf-error="Please enter a valid email." cf-questions="Great!&amp;&amp;What's your email?" cf-conditional-connect="yes" />
-
-        <fieldset cf-questions="All done...&amp;&amp;Thanks for the chat. Feel free to come back at any time... I'm always here&amp;&amp;Hope you enjoy the rest of your day! byeeeeee ~&amp;&amp;Please click the button below to officially conclude our session together">
+        <fieldset cf-questions="All done...&amp;&amp;Thanks for your feedback! Feel free to come back at any time... SESS can only improve when we all speak up, even anonymously&amp;&amp;Please click the button below to submit this form">
             <input required type="radio" name="submit" id="submit" value="yes">
             <label for="submit">Byeee!</label>
         </fieldset>
@@ -184,12 +113,12 @@
                     console.log("Formdata:", formData);
                     console.log("Formdata, serialized:", formDataSerialized);
 
-                    $(function() {
+                    /*$(function() {
                         var jqxhr = $.post("https://api.formcake.com/api/form/94b7d541-3072-4b45-8f39-8f5cb109c447/submission", $("#form").serialize(), function(data) {
                             console.log("Success! Data: " + formDataSerialized);
                             $(location).attr('href', 'https://peapeed-convo-form.netlify.app/success.html');
                         });
-                    })
+                    })*/
 
                 }
             });
