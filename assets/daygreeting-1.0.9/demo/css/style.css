@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+::selection {
+    background-color: #8737FF;
+}
+
+html {
+    height: 100%;
+    font-size: 12pt;
+}
+
+body,
+.wrapper {
+    background: #2c2c2e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+    font-family: 'Lexend Mega', sans-serif;
+}
+
+p {
+    font-family: "Karla", sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.green {
+    color: #66ff55;
+}
+
+.green:hover {
+    color: #ff2d55;
+}
+
+.border-t {
+    border-top: 1px solid #888;
+}
+
+.textsm {
+    font-size: 11pt;
+}
+
+#content {
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+#footer {
+    position: relative;
+    bottom: 0 !important;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.squiggle:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 5'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff5500' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 4px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+}
+
+.ctabtn {
+    text-decoration: none;
+}
+
+.ctabtn:hover {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
