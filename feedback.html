@@ -21,7 +21,7 @@
 <body>
     <form id="form" class="textgtreg">
 
-        <cf-robot-message cf-questions="Hi! &#x1F44B;&amp;&amp;Thanks for stopping by!&amp;&amp;You are a valued member of SESS and we would love to improve... please leave your honest feedback below and suggestions on how we could resolve your observation(s) &#x1F60A;"></cf-robot-message>
+        <cf-robot-message cf-questions="Hi! &#x1F44B;&amp;&amp;Thanks for stopping by!&amp;&amp;You are a valued member of SESS and we would love to improve... please leave your honest feedback below and suggestions on how we could resolve your observation(s) &#x1F60A;&amp;&amp;If you wish to change an answer, just click on it"></cf-robot-message>
 
         <fieldset cf-questions="What is the nature of your feedback?" cf-error="Please choose an option.">
             <input required type="radio" name="fbnature" id="fbnature1" value="complaint">
@@ -37,7 +37,13 @@
             <label for="fbnature4">Other</label>
         </fieldset>
 
-        <input required type="text" name="badwhatdidyoudo" id="badwhatdidyoudo" cf-questions="Awww, I feel the same tbh... but don't worry, we'll get through it together :')&amp;&amp;What did you get up to today?" cf-conditional-howsday="bad||okay" />
+        <fieldset cf-questions="Is your feedback sensitive and only should be seen by the team maintaining this form?" cf-error="Please choose an option.">
+            <input required type="radio" name="fbsensitive" id="fbsensitiveyes" value="yes">
+            <label for="fbsensitiveyes">Yes</label>
+
+            <input required type="radio" name="fbsensitive" id="fbsensitiveno" value="no">
+            <label for="fbsensitiveno">No</label>
+        </fieldset>
 
         <input required type="text" name="goodwhatdidyoudo" id="goodwhatdidyoudo" cf-questions="That sounds fantastic! What did you get up to today?" cf-conditional-howsday="good||freakingawesome" />
 
