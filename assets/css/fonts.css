@@ -1,34 +1,44 @@
 @font-face {
-    font-family: 'gtreg';
-    src: url('../fonts/GT-Walsheim-Regular.ttf') format('truetype');
+    font-family: 'gilroyblack';
+    src: url('../fonts/Gilroy-Black.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'gtmed';
-    src: url('../fonts/GT-Walsheim-Medium.ttf') format('truetype');
+    font-family: 'gilroyblackitalic';
+    src: url('../fonts/Gilroy-BlackItalic.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'gtbold';
-    src: url('../fonts/GT-Walsheim-Bold.ttf') format('truetype');
+    font-family: 'gilroybold';
+    src: url('../fonts/Gilroy-Bold.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'circularbook';
-    src: url('../fonts/CircularStd-Book.ttf') format('truetype');
+    font-family: 'gilroybolditalic';
+    src: url('../fonts/Gilroy-BoldItalic.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'circularbookitalic';
-    src: url('../fonts/CircularStd-BookItalic.ttf') format('truetype');
+    font-family: 'lexendexa';
+    src: url('../fonts/LexendExa-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'circularbold';
-    src: url('../fonts/CircularStd-Bold.ttf') format('truetype');
+    font-family: 'karlabold';
+    src: url('../fonts/Karla-Bold.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'circularblack';
-    src: url('../fonts/CircularStd-Black.ttf') format('truetype');
+    font-family: 'karlabolditalic';
+    src: url('../fonts/Karla-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'karlaitalic';
+    src: url('../fonts/Karla-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'karlareg';
+    src: url('../fonts/Karla-Regular.ttf') format('truetype');
 }
