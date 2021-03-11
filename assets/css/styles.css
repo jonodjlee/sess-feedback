@@ -12,8 +12,9 @@ body {
 .boldbtn {
     background: #fd5b78;
     border-radius: 50px;
-    padding: 10px 20px 10px 20px;
+    padding: 15px 20px 15px 20px;
     color: white;
+    text-decoration: none;
 }
 
 .boldbtn:hover {
