@@ -45,7 +45,7 @@
             <label for="fbsensitiveno">No</label>
         </fieldset>
 
-        <input required type="text" name="goodwhatdidyoudo" id="goodwhatdidyoudo" cf-questions="That sounds fantastic! What did you get up to today?" cf-conditional-howsday="good||freakingawesome" />
+        <input required type="text" name="complaintdetail" id="complaintdetail" cf-questions="Oh no! What happened?" cf-conditional-fbnature="complaint" />
 
         <fieldset cf-questions="That sounds alright...&amp;&amp;I pretty much just stayed in bed all day... how are you feeling?">
             <input required type="radio" name="howfeel" id="howfeel0" value="😊" cf-conditional-badwhatdidyoudo="[\w\W]*" cf-conditional-goodwhatdidyoudo="[\w\W]*">
