@@ -23,18 +23,18 @@
 
         <cf-robot-message cf-questions="Hi! &#x1F44B;&amp;&amp;Thanks for stopping by!&amp;&amp;You are a valued member of SESS and we would love to improve... please leave your honest feedback below and suggestions on how we could resolve your observation(s) &#x1F60A;"></cf-robot-message>
 
-        <fieldset cf-questions="Which option below best describes how your day has been so far?" cf-error="Please choose an option.">
-            <input required type="radio" name="howsday" id="howsday1" value="bad">
-            <label for="howsday1">bad</label>
+        <fieldset cf-questions="What is the nature of your feedback?" cf-error="Please choose an option.">
+            <input required type="radio" name="fbnature" id="fbnature1" value="complaint">
+            <label for="fbnature1">Complaint</label>
 
-            <input required type="radio" name="howsday" id="howsday2" value="okay">
-            <label for="howsday2">okay</label>
+            <input required type="radio" name="fbnature" id="fbnature2" value="compliment">
+            <label for="fbnature2">Compliment</label>
 
-            <input required type="radio" name="howsday" id="howsday3" value="good">
-            <label for="howsday3">good</label>
+            <input required type="radio" name="fbnature" id="fbnature3" value="idea">
+            <label for="fbnature3">Idea</label>
 
-            <input required type="radio" name="howsday" id="howsday4" value="freakingawesome">
-            <label for="howsday4">freaking awesome!</label>
+            <input required type="radio" name="fbnature" id="fbnature4" value="other">
+            <label for="fbnature4">Other</label>
         </fieldset>
 
         <input required type="text" name="badwhatdidyoudo" id="badwhatdidyoudo" cf-questions="Awww, I feel the same tbh... but don't worry, we'll get through it together :')&amp;&amp;What did you get up to today?" cf-conditional-howsday="bad||okay" />
