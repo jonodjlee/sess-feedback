@@ -34,11 +34,28 @@
             flex-direction: column;
             min-height: 100vh;
             position: relative;
+            background: #292929;
+        }
+
+        .container::after {
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.03;
+            background-image: url(assets/img/SESS%20tiled%20design%203%20mixed.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: repeat;
         }
 
         #content {
             height: 100%;
             padding-bottom: 50px;
+            z-index: 2;
         }
 
         #footer {
